@@ -1,0 +1,1 @@
+var obj={removeComments:!0,collapseWhitespace:!0,collapseBooleanAttributes:!0,removeEmptyAttributes:!0,removeScriptTypeAttributes:!0,removeStyleLinkTypeAttributes:!0,minifyJS:!0,minifyCSS:!0},gulp=require("gulp"),uglify=require("gulp-uglify");gulp.task("jsTask",function(){gulp.src("gulpfile.js").pipe(uglify()).pipe(gulp.dest("dest/js"))}),gulp.task("default",["jsTask"]);
